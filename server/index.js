@@ -1,4 +1,4 @@
 function index()
 {
-    return()
+    return(<></>);
 }
