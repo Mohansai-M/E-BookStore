@@ -1,0 +1,96 @@
+
+.NavList
+{
+  list-style: none;
+  float: right;
+  color: #3F72AF;
+}
+.ok
+{
+    /*background-color: #b3f4b9;*/
+    background-color: #F9F7F7;
+    
+}
+.NavBrand
+{
+  font-size: 170%;
+  margin-top: 3%;
+  margin-left: 15%;
+  color: #3F72AF;
+}
+.NavList ul{
+  list-style: none;
+  float: right;
+}
+.NavList li
+{  
+  display: inline-block;
+  text-decoration: none;
+  font-size: 150%;
+  font-weight: 400;
+}
+.NavItems
+{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  align-items: center;
+}
+.NavIcons
+{
+margin-top: 2%;
+padding: 0 0 0 0 ;
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+}
+
+.NavLink,.NavLink:focus,.NavLink:active
+{
+  text-decoration: none;
+  color: #3F72AF;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.7rem;
+  transition: all 0.3s;
+}
+.NavLink:hover
+{
+  text-decoration: none;
+  color: #5d99e3;
+}
+
+.searchbutton:hover
+{
+  transition-duration: 0.5s;
+}
+
+
+
+.inputfield
+{
+  padding: 2%;
+  border: 2px solid #3F72AF;
+  border-radius: 5px;
+}
+
+.logo {
+	height: 5rem;
+	width: auto;
+	float: left;
+  margin-top: 1%;
+  margin-left: 1.5%;
+}
+.searchIcon
+{
+  color: #3F72AF;
+}
+.cartcount
+{
+  background-color: red;
+  color: #EDF1D6;
+  padding: 2%;
+  margin-top: -55%;
+  margin-left: 45%;
+  width:20%;
+  border-radius: 5px;
+  text-align: center;
+}

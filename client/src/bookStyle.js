@@ -1,17 +1,17 @@
 
-import { makeStyles } from "@mui/styles";
+import Card  from "@mui/material/Card";
+import { styled } from "@mui/styles";
 
-const cardBook = makeStyles(() => ({
-  card: {minWidth: 256,
-  borderRadius: 16,
-  boxShadow: "none",
-  "&:hover": {
-    boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        .rotate(-12)
-        .darken(0.2)
-        .fade(0.5)}`,
-  },}
-}));
+const BookCard = styled(Card)({
+  backgroundColor: "#f0f2e3",
+  border: 0,
+  borderRadius: 10,
+  color: "#40513B",
+  width: "auto",
+  height: "100%",
+  paddingLeft: "10px",
+  paddingRight: "10px",
+});
 
 
-export { cardBook };
+export { BookCard };
