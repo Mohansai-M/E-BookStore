@@ -4,6 +4,7 @@
   list-style: none;
   float: right;
   color: #3F72AF;
+  transition: all 0.3s;
 }
 .ok
 {
@@ -48,7 +49,7 @@ margin-right: 0.5rem;
   text-decoration: none;
   color: #3F72AF;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.7rem;
   transition: all 0.3s;
 }

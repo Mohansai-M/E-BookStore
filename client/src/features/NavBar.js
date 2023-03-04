@@ -26,10 +26,10 @@ function NavBar() {
                <MagnifyingGlass size={35} color="#3F72AF" weight={SearchStyle} className="searchbutton" 
                onMouseOver={() => changeIconStyle("fill")}  onMouseOut={() => changeIconStyle("bold")} />
             </li>
-             <Link to="#" className="NavLink"><li className="NavItems">Home</li></Link>
-             <Link to="#" className="NavLink"><li className="NavItems">Books</li></Link>
-             <Link to="#" className="NavLink"><li className="NavItems">SignIn</li></Link>
-             <Link to="#" className="NavLink"><li className="NavItems">Register</li></Link>
+             <Link to="/" className="NavLink"><li className="NavItems">Home</li></Link>
+             <Link to="/" className="NavLink"><li className="NavItems">Books</li></Link>
+             <Link to="/" className="NavLink"><li className="NavItems">SignIn</li></Link>
+             <Link to="/" className="NavLink"><li className="NavItems">Register</li></Link>
              <li className="NavIcons">
                <ShoppingCart size={35} color="#3F72AF" weight="fill" />
              </li>

@@ -20,11 +20,11 @@ function BookLanding()
         {Books.map((book) => (
           <Card
             sx={{
-              backgroundColor: "#DBE2EF",
-              borderRadius: "1rem",
-              color: "#40513B",
+              backgroundColor: "#F9F7F7",
+              borderRadius: "0.4rem",
               width: "12rem",
               height: "95%",
+              boxShadow: "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
             }}
           >
             <CardMedia>
