@@ -1,89 +1,88 @@
 
-.NavList
-{
-  list-style: none;
-  float: right;
-  color: #3F72AF;
-  transition: all 0.3s;
-}
-.ok
+.navigationbar
 {
     /*background-color: #b3f4b9;*/
     background-color: #F9F7F7;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  /* Because we want header to be sticky later */
+    height: 7.6rem;
+    padding: 0 4.8rem;
+    position: relative;
 }
 .NavBrand
 {
-  font-size: 170%;
-  margin-top: 3%;
-  margin-left: 15%;
-  color: #3F72AF;
+  font-size: 150%;
+  margin-top: 1.5rem;
+  color: #228ce6;
+  margin-left: 8rem;
 }
-.NavList ul{
+.NavList{
   list-style: none;
-  float: right;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 .NavList li
 {  
   display: inline-block;
   text-decoration: none;
-  font-size: 150%;
-  font-weight: 400;
-}
-.NavItems
-{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  align-items: center;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
 }
 .NavIcons
 {
-margin-top: 2%;
-padding: 0 0 0 0 ;
-margin-left: 0.5rem;
-margin-right: 0.5rem;
+margin-top: 1.5%;
+}
+.SearchIcon svg
+{
+  margin-left: 1.5%;
+  align-items: center;
+}
+.Account-Status
+{
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #228ce6;
 }
 
 .NavLink,.NavLink:focus,.NavLink:active
 {
   text-decoration: none;
-  color: #3F72AF;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 0.7rem;
+  color: #112D4E;
+  font-weight: 500;
+  font-size: 1.8rem;
   transition: all 0.3s;
 }
 .NavLink:hover
 {
   text-decoration: none;
-  color: #5d99e3;
+  /*color: #5d99e3;*/
+   color: #1f9dcf;
 }
-
-.searchbutton:hover
-{
-  transition-duration: 0.5s;
-}
-
 
 
 .inputfield
 {
   padding: 2%;
-  border: 2px solid #3F72AF;
+  border: 2px solid #228ce6;
   border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  width: 80%;
 }
 
 .logo {
-	height: 5rem;
+	height: 6.5rem;
 	width: auto;
 	float: left;
   margin-top: 1%;
   margin-left: 1.5%;
 }
-.searchIcon
-{
-  color: #3F72AF;
-}
+
 .cartcount
 {
   background-color: red;

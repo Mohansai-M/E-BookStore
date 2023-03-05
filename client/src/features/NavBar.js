@@ -13,25 +13,26 @@ function NavBar() {
    return (
      <div className="container-fluid ok">
        <div className="navigationbar row">
-         <div className="col-6">
+         <div className="col-3">
           <Link to="/" className="NavLink">
-           <img src={logo} width="30" height="30" className="logo" alt="Logo" />
-           <p className="NavBrand">Book Worm</p>
+           <img src={logo} className="logo" alt="Logo" />
+           <p className="NavBrand">Bookworm</p>
            </Link>
          </div>
-         <div className="col-6">
-           <ul className="NavList">
-               <li className="NavItems"><input className="inputfield" type="text" placeholder="Search" /></li>
-            <li className="NavIcons">
-               <MagnifyingGlass size={35} color="#3F72AF" weight={SearchStyle} className="searchbutton" 
+          <div className="col-5">
+          <input className="inputfield" type="text" placeholder="Search" />
+            <span className="SearchIcon">
+               <MagnifyingGlass size={35} color="#228ce6" weight={SearchStyle} className="searchbutton" 
                onMouseOver={() => changeIconStyle("fill")}  onMouseOut={() => changeIconStyle("bold")} />
-            </li>
-             <Link to="/" className="NavLink"><li className="NavItems">Home</li></Link>
-             <Link to="/" className="NavLink"><li className="NavItems">Books</li></Link>
-             <Link to="/" className="NavLink"><li className="NavItems">SignIn</li></Link>
-             <Link to="/" className="NavLink"><li className="NavItems">Register</li></Link>
+            </span>
+         </div>
+         <div className="col-4">
+           <ul className="NavList">
+             <Link to="/" className="NavLink"><li className="NavItems">Categories</li></Link>
+             <Link to="/" className="NavLink"><li className="NavItems">Orders</li></Link>
+             <Link to="/" className="NavLink"><li className="NavItems Account-Status">SignIn/Register</li></Link>
              <li className="NavIcons">
-               <ShoppingCart size={35} color="#3F72AF" weight="fill" />
+               <ShoppingCart size={35} color="#228ce6" weight="fill" />
              </li>
            </ul>
          </div>

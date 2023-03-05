@@ -4,6 +4,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { Card } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function BookLanding()
 {
@@ -22,10 +23,11 @@ function BookLanding()
             sx={{
               backgroundColor: "#F9F7F7",
               borderRadius: "0.4rem",
-              width: "12rem",
+              width: "18rem",
               height: "95%",
               boxShadow: "rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px",
             }}
+            key={book.isbn}
           >
             <CardMedia>
               <div className="imgdiv">
@@ -33,13 +35,15 @@ function BookLanding()
               </div>
             </CardMedia>
             <CardContent>
-              <div className="booktitle">
-                <span className="BookTitle">{book.name} </span>
+              <div  className="cardContent">
+              <div className="booktitle row">
+                <Link to={`/Books/${book.isbn}`}><span className="BookTitle">{book.name} </span></Link>
               </div>
-              <div className="bookdetails">
-                <b>{book.author}</b>
+              <div className="bookdetails row">
+                <span ><small>by</small> <b>{book.author}</b></span>
               </div>
-              <div className="bookdetails">&#8377;{book.price}</div>
+              <div className="bookdetails row BookPrice">&nbsp;&nbsp;&#8377;{book.price}</div>
+              </div>
               <CardActions>
                 <div className="detailbutton">
                   <button className="CartButton">Add to Cart</button>

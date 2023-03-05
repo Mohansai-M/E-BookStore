@@ -6,11 +6,14 @@
 }
 
 html
+{
+  font-size: 62.5%;
+}
 body{
 	font-size: 15px;
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
-   font-family: "Rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
 }
@@ -65,11 +68,17 @@ body{
 @media (min-width: 900px) {
   .bookcard { grid-template-columns: repeat(6, 1fr); }
 }
-
+.BookTitle
+{
+  height: 2rem;
+  overflow: hidden;
+  white-space: nowrap; 
+   text-overflow: ellipsis;
+}
 .BookTitle,.BookTitle:focus,.BookTitle:active
 {
   text-decoration: none;
-    color: "#112D4E",
+  color: "#112D4E",
 }
 .BookTitle:hover
 {
@@ -77,7 +86,6 @@ body{
   color: #112D4E;
   cursor: pointer;
   transition: 0.5s;
-  font-weight:540;
 }
 .bookdetailscard
 {
@@ -91,6 +99,10 @@ body{
 margin-left: 0.7em;
 margin-right: 0.7em;
 }
+.cardContent
+{
+height: 9rem;
+}
 .bookdetails:hover
 {
   cursor:default
@@ -100,11 +112,10 @@ margin-right: 0.7em;
 margin-left: 0.7em;
 margin-bottom: 0.2em;
 }
-.booktitle
+.BookPrice
 {
-height: 3em;
-margin-left: 0.7em;
-margin-right: 0.7em;
+color: rgb(188, 35, 35);
+font-weight: 600;
 }
 .imgdiv
 {
@@ -114,7 +125,7 @@ margin-right: 0.7em;
 {
 	width:94%;
   overflow: scroll;
-	height: 15rem;
+	height: 19rem;
   margin-top: 0.2em;
   border-radius: 0.3em;
 }
@@ -126,18 +137,20 @@ margin-right: 0.7em;
   padding-right: 1em;
   padding-bottom: 0.2em;
   border-radius: 0.4em;
-  border:2px solid #3F72AF;
+  border:2px solid #228ce6;
   color: #40513B;
   background-color: #ffffff;
 }
 .CartButton:hover
 {
-background-color: #3F72AF;
+background-color: #228ce6;
 color: #EDF1D6;
-border: 2px solid #3F72AF;
+border: 2px solid #228ce6;
 transition-duration: 0.5s;
 }
 .mainbook-div
 {
     background-color: #F9F7F7;
+    font-size: 1.5rem;
+    padding-top: 2%;
 }
