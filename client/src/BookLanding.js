@@ -37,7 +37,7 @@ function BookLanding()
             <CardContent>
               <div  className="cardContent">
               <div className="booktitle row">
-                <Link to={`/Books/${book.isbn}`}><span className="BookTitle">{book.name} </span></Link>
+                <Link className="BookTitleLink" to={`/Books/${book.isbn}`}><span className="BookTitle">{book.name} </span></Link>
               </div>
               <div className="bookdetails row">
                 <span ><small>by</small> <b>{book.author}</b></span>

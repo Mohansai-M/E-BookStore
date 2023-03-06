@@ -11,11 +11,18 @@ function Book() {
    setBook(response.data));
     
   }, [localIsbn]);
-  
   return (
     <div className="mainbook-div container-fluid">
-      <div className="bookcard">
-        <h1>{Book.isbn}</h1>
+      <div className="bookInfo row">
+        <div className="ImgBokcl col-5">
+          <img className="BookImg" src={Book.image} alt={Book.name} />
+        </div>
+        <div className="ImgBokdt col-5">
+          <h1>{Book.isbn}</h1>
+          <h1>{Book.name}</h1>
+          <h1>{Book.author}</h1>
+          <h1>{Book.price}</h1>
+        </div>
       </div>
     </div>
   );

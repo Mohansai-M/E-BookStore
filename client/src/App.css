@@ -80,7 +80,7 @@ body{
   text-decoration: none;
   color: "#112D4E",
 }
-.BookTitle:hover
+.BookTitle:hover,.BookTitleLink
 {
   text-decoration: none;
   color: #112D4E;
@@ -90,7 +90,6 @@ body{
 .bookdetailscard
 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 20px;
   border-radius: 10px;
   width:220px;
 }
@@ -152,5 +151,18 @@ transition-duration: 0.5s;
 {
     background-color: #F9F7F7;
     font-size: 1.5rem;
-    padding-top: 2%;
+    padding-top: 4%;
+}
+.bookInfo
+{
+  align-items: center;
+}
+.ImgBokcl
+{
+margin-left: 7rem;
+}
+.BookImg
+{
+  height: 60rem;
+  width: auto;
 }
