@@ -15,7 +15,7 @@ function Book() {
     <div className="mainbook-div container-fluid">
       <div className="bookInfo row">
         <div className="ImgBokcl col-5">
-          <img className="BookImg" src={Book.image} alt={Book.name} />
+          <img className="BookImg" src={`data:image/jpeg;base64,${Book.image}`}  alt={Book.name} />
         </div>
         <div className="ImgBokdt col-5">
           <h1>{Book.isbn}</h1>

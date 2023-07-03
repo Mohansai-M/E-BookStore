@@ -2,19 +2,27 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 let Book = new Schema({
-  name: {
+  bookTitle: {
     type: String,
   },
-  price: {
+  bookPrice: {
     type: String,
   },
-  author: {
+  bookAuthor: {
     type: String,
   },
-  image: {
+  bookImage: {
+    fieldname: String,
+    originalname: String,
+    encoding: String,
+    mimetype: String,
+    buffer: Buffer,
+    size: Number,
+  },
+  bookIsbn: {
     type: String,
   },
-  isbn: {
+  bookGenre: {
     type: String,
   },
 });

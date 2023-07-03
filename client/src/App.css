@@ -4,7 +4,11 @@
 	box-sizing: border-box;
   
 }
-
+.App
+{
+  background-color: #F9F7F7;
+  height: 100%;
+}
 html
 {
   font-size: 62.5%;
@@ -18,43 +22,6 @@ body{
   font-weight: 400;
 }
 
-
-.App {
-  text-align: center;
-}
-
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #EDF1D6;
-}
-
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .bookcard
 {
   max-width: 1200px;
@@ -70,10 +37,17 @@ body{
 }
 .BookTitle
 {
+   display:inline-block;
   height: 2rem;
-  overflow: hidden;
   white-space: nowrap; 
-   text-overflow: ellipsis;
+  width: 98%;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  
+}
+.bookGenre
+{
+  overflow: scroll;
 }
 .BookTitle,.BookTitle:focus,.BookTitle:active
 {
@@ -91,16 +65,12 @@ body{
 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
-  width:220px;
 }
-.bookdetails
-{
-margin-left: 0.7em;
-margin-right: 0.7em;
-}
+
 .cardContent
 {
 height: 9rem;
+margin-left: -0.8rem;
 }
 .bookdetails:hover
 {
@@ -122,8 +92,9 @@ font-weight: 600;
 }
 .imgclass
 {
-	width:94%;
-  overflow: scroll;
+	width:90%;
+  position: relative;
+  overflow: hidden;
 	height: 19rem;
   margin-top: 0.2em;
   border-radius: 0.3em;

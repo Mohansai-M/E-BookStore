@@ -1,0 +1,27 @@
+.AddBookForm{
+    width: 600px;
+    height: "100%";
+    background-color: #ffffff;
+    margin: 3rem auto;
+    padding-left: 10rem;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 2rem;
+    
+
+}
+.AddBookForm input
+{
+   padding: 2%;
+  border: 2px solid #5fadf1;
+  border-radius: 5px;
+  background-color: #F9F7F7;
+  font-weight: 300;
+  font-size: 1.8rem;
+  width: 80%;
+}
+.AddBookForm label
+{
+   font-weight: 400;
+  font-size: 1.8rem;
+}
