@@ -11,35 +11,53 @@ function NavBar() {
     setSearchStyle(style);
   }
    return (
-     <div className="container-fluid ok">
-       <div className="navigationbar row">
-         <div className="col-3">
-          <Link to="/" className="NavLink">
-           <img src={logo} className="logo" alt="Logo" />
-           <p className="NavBrand">Bookworm</p>
-           </Link>
-         </div>
-          <div className="col-5">
-          <input className="inputfield" type="text" placeholder="Search" />
-            <span className="SearchIcon">
+<header className="header">
+
+      <Link to="/" className="main-nav-link">
+       <ul className="nested-nav-list">
+         <li><img src={logo} className="logo" alt="Bookworm Logo" /></li>
+         <li><p className="nav-brand">Bookworm</p></li>
+       </ul>
+      </Link>
+
+      <nav className="main-nav">
+        <ul className="main-nav-list">
+          <li className="search-Nav">
+              <ul className="nested-nav-list">
+              <li><input className="inputfield" type="text" placeholder="Search" /></li>
+              <li><span className="SearchIcon">
                <MagnifyingGlass size={35} color="#228ce6" weight={SearchStyle} className="searchbutton" 
                onMouseOver={() => changeIconStyle("fill")}  onMouseOut={() => changeIconStyle("bold")} />
-            </span>
-         </div>
-         <div className="col-4">
-           <ul className="NavList">
-             <Link to="/" className="NavLink"><li className="NavItems">Categories</li></Link>
-             <Link to="/" className="NavLink"><li className="NavItems">Orders</li></Link>
-             <Link to="/" className="NavLink"><li className="NavItems Account-Status">SignIn/Register</li></Link>
-             <li className="NavIcons">
-               <ShoppingCart size={35} color="#228ce6" weight="fill" />
-             </li>
-           </ul>
-         </div>
-       </div>
-     </div>
+              </span></li>
+              </ul>        
+          </li>
+          <li className="search-Nav-dropdown">
+            <div class="dropdown">
+              <span className="SearchIcon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+               <MagnifyingGlass size={35} color="#228ce6" weight={SearchStyle} className="searchbutton" 
+               onMouseOver={() => changeIconStyle("fill")}  onMouseOut={() => changeIconStyle("bold")} />
+              </span>
+                <ul class="dropdown-menu">
+                 <li><input className="inputfield" type="text" placeholder="Search" /></li>
+                </ul>
+          </div>
+          </li>
+          <li><Link className="main-nav-link" href="#meals">Categories</Link></li>
+          <li>
+            <Link className="main-nav-link" href="#testimonials">Orders</Link>
+          </li>
+          <li><Link className="main-nav-link nav-cta" href="#cta">SignIn/Register</Link></li>
+          <li><Link className="main-nav-link" href="#pricing"><ShoppingCart size={35} color="#228ce6" weight="fill" /></Link></li>
+        </ul>
+      </nav>
+
+      <button className="btn-mobile-nav">
+        <ion-icon className="icon-mobile-nav md hydrated" name="menu-outline" role="img" aria-label="menu outline"></ion-icon>
+        <ion-icon className="icon-mobile-nav md hydrated" name="close-outline" role="img" aria-label="close outline"></ion-icon>
+      </button>
+    </header>
    );
   
-                 }
+ }
 
 export default NavBar;

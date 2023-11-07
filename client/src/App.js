@@ -1,4 +1,5 @@
 import './App.css';
+import "./queries.css";
 import BookLanding from './BookLanding';
 import NavBar from './features/NavBar';
 import {  BrowserRouter as Router,Route,Routes } from 'react-router-dom';
